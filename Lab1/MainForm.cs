@@ -1,4 +1,4 @@
-﻿пnamespace Lab1
+﻿namespace Lab1
 {
     public partial class MainForm : Form
     {
@@ -61,11 +61,11 @@
 
         private void OpenDialogBtn3_Click(object sender, EventArgs e)
         {
-            using (InputDialog dialog = new InputDialog())
+            using (GroupDialog dialog = new GroupDialog())
             {
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
-                    resultLabel3.Text = dialog.InputText;
+                    resultLabel3.Text = dialog.SelectedGroup;
                  }
              }
          }
